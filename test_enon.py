@@ -30,21 +30,23 @@ def test_len():
 
 
 def test_getitem():
-    assert enon['asdf'] is enon
+    assert enon['test'] is enon
     assert enon[1] is enon
     assert enon[-1:3:-2] is enon
 
 
 def test_setitem():
-    pass
+    enon[1] = 'test'
+    enon['test'] = 'test'
 
 
 def test_contains():
-    return False
+    assert 'test' not in enon
+    assert 1 not in enon
 
 
 def test_append():
-    pass
+    enon.append(1)
 
 
 def test_context_manager():
