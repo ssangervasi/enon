@@ -2,7 +2,7 @@
 A Python object that does everything while doing nothing.
 
 ## Usage
-```
+```py
 from enon import Enon, enon
 
 with enon.open() as enon:
